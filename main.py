@@ -131,8 +131,8 @@ if __name__ == '__main__':
                                                            circle_shirley.shape_type,
                                                            circle_shirley.allies,
                                                            circle_shirley.enemies))
-    flatland = []
-    flatland = flatland.append(triangle_joe, triangle_jim, circle_susan, circle_shirley, square_marty, square_cynthia)
+#    flatland = []
+#    flatland = flatland.append(triangle_joe, triangle_jim, circle_susan, circle_shirley, square_marty, square_cynthia)
 
 #    for person in flatland:
 #        print("Name: {} Type: {} Friends: {} Enemies{}".format(person.name,
