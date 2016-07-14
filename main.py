@@ -93,12 +93,42 @@ class Circle(object):
 
 if __name__ == '__main__':
     square_marty = Square(5, "marty", [], [])
-    print(square_marty.area())
-    print(square_marty.update_edge_length(10))
-    print(square_marty.allies)
+    square_cynthia = Square(2.5, "cynthia", [], [])
 
-    triangle_joe = Triangle(3, "joe", ["marty"], ["susan"])
-    print(triangle_joe.enemies)
+    print("Name: {} Type: {} Friends: {} Enemies{}".format(square_marty.name,
+                                                           square_marty.shape_type,
+                                                           square_marty.allies,
+                                                           square_marty.enemies))
 
-    circle_susan = Circle(2, "susan", ["marty", "joe"], [])
-    print("Susan's Area: {}    Susan's Allies: {}".format(circle_susan.area(), circle_susan.allies))
+    print("Name: {} Type: {} Friends: {} Enemies{}".format(square_cynthia.name,
+                                                           square_cynthia.shape_type,
+                                                           square_cynthia.allies,
+                                                           square_cynthia.enemies))
+
+    triangle_joe = Triangle(3, "joe", ["shirley", "susan"], ["marty", "cynthia"])
+    triangle_jim = Triangle(6, "jim", ["shirley", "susan"], ["marty", "cynthia"])
+
+    print("Name: {} Type: {} Friends: {} Enemies{}".format(triangle_joe.name,
+                                                           triangle_joe.shape_type,
+                                                           triangle_joe.allies,
+                                                           triangle_joe.enemies))
+
+    print("Name: {} Type: {} Friends: {} Enemies{}".format(triangle_jim.name,
+                                                           triangle_jim.shape_type,
+                                                           triangle_jim.allies,
+                                                           triangle_jim.enemies))
+
+
+    circle_susan = Circle(2, "susan", ["marty", "joe"], ["marty", "cynthia"])
+    circle_shirley = Circle(3.5, "shirley", ["marty", "joe"], ["marty", "cynthia"])
+
+    print("Name: {} Type: {} Friends: {} Enemies{}".format(circle_susan.name,
+                                                           circle_susan.shape_type,
+                                                           circle_susan.allies,
+                                                           circle_susan.enemies))
+
+    print("Name: {} Type: {} Friends: {} Enemies{}".format(circle_shirley.name,
+                                                           circle_shirley.shape_type,
+                                                           circle_shirley.allies,
+                                                           circle_shirley.enemies))
+
