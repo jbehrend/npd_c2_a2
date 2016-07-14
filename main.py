@@ -95,47 +95,17 @@ if __name__ == '__main__':
     square_marty = Square(5, "marty", [], [])
     square_cynthia = Square(2.5, "cynthia", [], [])
 
-    print("Name: {} Type: {} Friends: {} Enemies{}".format(square_marty.name,
-                                                           square_marty.shape_type,
-                                                           square_marty.allies,
-                                                           square_marty.enemies))
-
-    print("Name: {} Type: {} Friends: {} Enemies{}".format(square_cynthia.name,
-                                                           square_cynthia.shape_type,
-                                                           square_cynthia.allies,
-                                                           square_cynthia.enemies))
-
     triangle_joe = Triangle(3, "joe", ["shirley", "susan"], ["marty", "cynthia"])
     triangle_jim = Triangle(6, "jim", ["shirley", "susan"], ["marty", "cynthia"])
-
-    print("Name: {} Type: {} Friends: {} Enemies{}".format(triangle_joe.name,
-                                                           triangle_joe.shape_type,
-                                                           triangle_joe.allies,
-                                                           triangle_joe.enemies))
-
-    print("Name: {} Type: {} Friends: {} Enemies{}".format(triangle_jim.name,
-                                                           triangle_jim.shape_type,
-                                                           triangle_jim.allies,
-                                                           triangle_jim.enemies))
-
 
     circle_susan = Circle(2, "susan", ["marty", "joe"], ["marty", "cynthia"])
     circle_shirley = Circle(3.5, "shirley", ["marty", "joe"], ["marty", "cynthia"])
 
-    print("Name: {} Type: {} Friends: {} Enemies{}".format(circle_susan.name,
-                                                           circle_susan.shape_type,
-                                                           circle_susan.allies,
-                                                           circle_susan.enemies))
 
-    print("Name: {} Type: {} Friends: {} Enemies{}".format(circle_shirley.name,
-                                                           circle_shirley.shape_type,
-                                                           circle_shirley.allies,
-                                                           circle_shirley.enemies))
-#    flatland = []
-#    flatland = flatland.append(triangle_joe, triangle_jim, circle_susan, circle_shirley, square_marty, square_cynthia)
+    flatland = [triangle_joe, triangle_jim, circle_susan, circle_shirley, square_marty, square_cynthia]
 
-#    for person in flatland:
-#        print("Name: {} Type: {} Friends: {} Enemies{}".format(person.name,
-#                                                               person.shape_type,
-#                                                               person.allies,
-#                                                               person.enemies))
+    for person in flatland:
+        print("Name: {} Type: {} Friends: {} Enemies{}".format(person.name,
+                                                               person.shape_type,
+                                                               person.allies,
+                                                               person.enemies))
